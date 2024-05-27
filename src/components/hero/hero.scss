@@ -74,11 +74,11 @@ img {
     padding: 1.5rem 1rem;
   }
   .container .right_section{
-    visibility: hidden;
+    display: none;
   }
-  // .img {
-  //   visibility: hidden;
-  // }
+  .img {
+ display: none;
+  }
 
   .container .left_section span {
     font-size: 1rem;
