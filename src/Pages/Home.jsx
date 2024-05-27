@@ -1,16 +1,16 @@
-import React ,{useState}from 'react'
-import Navbar from "../components/Navbar/Navbar"
+import React, { useState } from 'react'
+// import Navbar from "../components/Navbar/Navbar"
 import Hero from "../components/hero/Hero";
 import About from "../components/about/About";
 import Projects from '../components/projects/Projects';
-import Experience from '../components/Experience/Experience';
+// import Experience from '../components/Experience/Experience';
 import Footer from '../components/footer/Footer';
-import SingleProject from './SingleProject';
+// import SingleProject from './SingleProject';
 import { FaCircleArrowUp } from "react-icons/fa6";
 import './Home.scss'
-import { BsBorder } from 'react-icons/bs';
+
 const Home = () => {
-   const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   // Function to handle scroll event
   const handleScroll = () => {
@@ -37,27 +37,21 @@ const Home = () => {
 
   return (
     <>
-   
-   {/* <div className='main'>
-    <div className="gradient"></div> */}
-    <Hero/>
-   {/* </div> */}
-    
+      <Hero />
+      <About />
 
-    <About/>
-    
-    <Projects></Projects>
-   
-    {/* <Experience></Experience> */}
-    <Footer/>
-    <div>
-      {isVisible && (
-        <button className="scroll-btn" onClick={scrollToTop}>
-         <FaCircleArrowUp />
-        </button>
-      )}
-    </div>
-    
+      <Projects></Projects>
+
+      {/* <Experience></Experience> */}
+      <Footer />
+      <div>
+        {isVisible && (
+          <button className="scroll-btn" onClick={scrollToTop}>
+            <FaCircleArrowUp />
+          </button>
+        )}
+      </div>
+
     </>
   )
 }
