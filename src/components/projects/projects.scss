@@ -1,0 +1,134 @@
+.project_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 50px;
+  border-bottom: 1px solid #3b82f6;
+
+  .project_card {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: #222;
+    border: 1px solid rgb(49, 48, 48);
+
+    height: 420px;
+    img {
+      height: 200px;
+    }
+
+    h3 {
+      text-align: center;
+      padding-top: 12px;
+      font-size: 1.2rem;
+      color: #3b82f6;
+      font-family: Lato, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+    }
+    p {
+      text-align: center;
+      font-size: .8em;
+      color: #8a8a8a;
+      margin: 5px 20px;
+      font-family: Lato, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      text-align: justify;
+    }
+  }
+}
+.btn_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .btn {
+    background-color: aquamarine;
+    background: linear-gradient(135deg, #93c5fd, #3b82f6);
+    padding: 10px 35px;
+    text-align: center;
+    border: none;
+    font-size: 1rem;
+    color: #cacaca;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+
+.search {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 4rem 0rem 0rem;
+}
+input {
+  padding: 8px 15px;
+}
+
+.skills {
+  text-align: center;
+}
+.skill {
+  border: 1px solid #474a4f;
+  font-size: 0.6em;
+  color: #8a8a8a;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  padding: 4px;
+  margin-right: 6px;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+.btns button {
+  padding: 5px 25px;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  background-color: #252525;
+  cursor: pointer;
+  border: 1px solid #3b82f6;
+  color: #999;
+}
+
+@media (max-width: 768px) {
+    .project_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+  .project_container  .project_card{
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+  .project_container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .project_container .project_card img {
+    height: 130px;
+  }
+  .project_container {
+    padding: 10px;
+  }
+  .project_container .project_card {
+    margin: 10px;
+  }
+  .project_container .project_card p {
+    font-size: 0.8rem;
+  }
+  .project_container .project_card h3 {
+    font-size: 1rem;
+  }
+  .skill {
+    font-size: 0.5em;
+  }
+  .btns button {
+    font-size: 0.6rem;
+    padding: 4px 18px ;
+  }
+}

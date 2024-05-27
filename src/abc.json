@@ -1,0 +1,43 @@
+ {data.map((itm)=>(
+   <Link to="/SingleProject" >
+   <div  className="project_card" key={itm.id}>
+   <img src={itm.img} alt="" />
+    <h3>{itm.projectTitle}</h3>
+     <p>{itm.subTitle}</p>
+     </div>
+</Link>
+ ))}  
+    
+      <Link to="/SingleProject" >
+           <div className="project_card">
+        <img src="https://react-tailwindcss-portfolio.netlify.app/static/media/mobile-project-1.0aa0cb76.jpg" alt="" />
+        <h3>Project Title</h3>
+         <p>Projet Subtitle</p>
+     </div>
+     </Link>
+     <div className="project_card">
+        <img src="https://react-tailwindcss-portfolio.netlify.app/static/media/mobile-project-1.0aa0cb76.jpg" alt="" />
+        <h3>Project Title</h3>
+         <p>Projet Subtitle</p>
+     </div>
+     <div className="project_card">
+        <img src="https://react-tailwindcss-portfolio.netlify.app/static/media/mobile-project-1.0aa0cb76.jpg" alt="" />
+        <h3>Project Title</h3>
+         <p>Projet Subtitle</p>
+     </div>
+     <div className="project_card">
+        <img src="https://react-tailwindcss-portfolio.netlify.app/static/media/mobile-project-1.0aa0cb76.jpg" alt="" />
+        <h3>Project Title</h3>
+         <p>Projet Subtitle</p>
+     </div>
+     <div className="project_card">
+        <img src="https://react-tailwindcss-portfolio.netlify.app/static/media/mobile-project-1.0aa0cb76.jpg" alt="" />
+        <h3>Project Title</h3>
+         <p>Projet Subtitle</p>
+     </div> 
+     <div className="project_card">
+        <img src="https://react-tailwindcss-portfolio.netlify.app/static/media/mobile-project-1.0aa0cb76.jpg" alt="" />
+        <h3>Project Title</h3>
+         <p>Projet Subtitle</p>
+     </div>  */ 
+

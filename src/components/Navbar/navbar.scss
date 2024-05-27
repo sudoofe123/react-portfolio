@@ -1,0 +1,120 @@
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  color: #cacaca;
+  font-weight: 600;
+}
+
+
+/* navbar */
+.navbar {
+  // background-color: aliceblue;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  min-height: 70px;
+  padding-left: 70px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+
+/* logo  */
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3b82f6;
+  background-position: 0px 0px;
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* ul  */
+.navMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 780px){
+  .navbar{
+    min-height: 50px;
+    padding-left: 10px;
+  }
+  /* hamburger */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bars {
+        background-color: #fff;
+        width: 20px;
+        height: 3px;
+        display: block;
+        margin: 5px;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+    }
+
+  /* adding active class to the bars  */
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+
+  /* navMenu */
+
+  .navMenu{
+    position: absolute;
+    flex-direction: column;
+    gap: 0;
+    top: 50px;
+    left: -100%;
+    text-align: start;
+    width: 100%;
+    transition: 0.7s ease-in-out;
+    // background-color: aliceblue;
+    background-color: #222;
+ 
+    padding: 10px;
+  }
+.navMenu a{
+  color: #cacaca;
+}
+  .navMenu.active{
+    left: 0;
+  }
+
+  .navMenu li {
+    margin: 16px 0;
+  }
+}
