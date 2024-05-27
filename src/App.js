@@ -1,12 +1,12 @@
 import "./App.scss";
 // import Navbar from './components/Navbar/Navbar';
 // import Hero from './components/hero/Hero';
-import Projects from "./components/projects/Projects";
+// import Projects from "./components/projects/Projects";
 // import About from './components/about/About';
 // import Experience from './components/Experience/Experience';
 // import Footer from './components/footer/Footer';
 import Home from "./Pages/Home";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import SingleProject from "./Pages/SingleProject";
 import { projectData } from "./data/Data";
 import Navbar from "./components/Navbar/Navbar";

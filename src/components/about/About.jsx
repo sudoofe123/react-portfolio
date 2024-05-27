@@ -1,10 +1,8 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
 import "./about.scss";
 //import img from "./illus.svg";
 // import img from "./sud.jpg.jfif";
 import img from "./undraw_male_avatar_g98d.svg"
-import { useSelector, useDispatch } from "react-redux";
+
 
 const About = () => {
   const skillArr=["Html/css","scss","Javacript","Typescript","Reactjs","Reduxjs","Tailwind Css","Node js","Express js","C/C++/C#","Azure","SQL","Apex/carbon charts","Ui/ux Design"]
