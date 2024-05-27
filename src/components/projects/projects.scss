@@ -16,6 +16,7 @@
     height: 420px;
     img {
       height: 200px;
+      padding: 15px 15px 0 15px;
     }
 
     h3 {
@@ -108,6 +109,10 @@ input {
   .project_container {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  img {
+ 
+    padding: 15px 15px 0 15px;
   }
   .project_container .project_card img {
     height: 130px;
